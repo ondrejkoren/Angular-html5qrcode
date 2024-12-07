@@ -1,0 +1,22 @@
+{
+  "name": "angular-html5-qrcode",
+  "version": "0.0.5",
+  "peerDependencies": {
+    "@angular/common": "^17.3.0",
+    "html5-qrcode": "^2.3.8",
+    "@angular/core": "^17.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedfakhreldin/Angular-html5qrcode.git"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/mohamedfakhreldin/Angular-html5qrcode/issues"
+  },
+  "homepage": "https://github.com/mohamedfakhreldin/Angular-html5qrcode#readme",
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}
