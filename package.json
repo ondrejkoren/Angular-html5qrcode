@@ -1,10 +1,10 @@
 {
   "name": "angular-html5-qrcode",
-  "version": "0.0.5",
+  "version": "0.0.9",
   "peerDependencies": {
-    "@angular/common": "^17.3.0",
-    "html5-qrcode": "^2.3.8",
-    "@angular/core": "^17.3.0"
+    "@angular/common": ">=16.0.0",
+    "@angular/core": ">=16.0.0",
+    "html5-qrcode": "^2.3.8"
   },
   "repository": {
     "type": "git",

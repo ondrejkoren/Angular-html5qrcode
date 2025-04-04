@@ -53,9 +53,17 @@ both:[
 Html5QrcodeScanType.SCAN_TYPE_FILE,
 ]
 }
-  @Input() qrbox: QrDimensions | QrDimensionFunction = {width:250, height:250}
-  constructor(public angularHtmlQrcodeService:AngularHtmlQrcodeService ){}
-  ngAfterViewInit(): void {
+@Input() qrbox: QrDimensions | QrDimensionFunction = {width:250, height:250}
+constructor(public angularHtmlQrcodeService:AngularHtmlQrcodeService ){}
+ngAfterContentInit(): void {
+  setTimeout(() => {
+this.onReaderLoad()
+  },80)
+  //Called after ngOnInit when the component's or directive's content has been initialized.
+  //Add 'implements AfterContentInit' to the class.
+
+}
+onReaderLoad(){
 
 
   let html = this.angularHtmlQrcodeService.html5QrcodeScanner(
@@ -79,7 +87,5 @@ Html5QrcodeScanType.SCAN_TYPE_FILE,
         this.onError.emit(err);
       }
     );
-
-
   }
-}
+  }
